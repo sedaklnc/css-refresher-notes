@@ -17,6 +17,7 @@ This is a quick refresher of CSS concepts.
 | element>element     | div > p      | select all p elements where the parent is div element|
 | [attribute]  | [name] | selects all elements with a name attribute |
 
+
 > It selects all elements with the attr name is 'name' <
 ```ruby
 
@@ -84,4 +85,20 @@ This is a quick refresher of CSS concepts.
     </div>
 </body>
 ```
+
+
+## Selectors Pseudo Class ##
+
+
+| Selectors | Example | Example Description |
+| :---         |     :---:      |          ---: |
+| :active | a:active   |Matches when an item is being activated by the user.|
+| :hover     |   a:hover    | select links on mouse over|
+| :link | a:link | represents an element that has not yet been visited |
+| :visited | a:visited   | represents an element that has already visited |
+| :focus  | a:focus       | generally triggered when the user clicks or taps on en element   |
+| :target   | #a:target       | selects the current active #a element|
+| :checked   |    s:checked   | selector represents any radio, checkboz, or option element that is checked or toggled|
+| :disabled | input:disabled| An element is disabled if it cant be activated |
+| :required| input:required | represents any input,select element that has the required attr set on it |
 
