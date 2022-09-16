@@ -176,7 +176,34 @@ This is a quick refresher of CSS concepts.
     <input type='checkbox' checked="checked">Foods</input>
 </body>
 ```
-
-
+> an element is disabled if it can't be activated.
+```ruby
+<style>
+    input:disabled{
+    border: none;
+    background-color: cornflowerblue;
+        }  
+    </style>
+</head>
+<body>  
+    Member-no: <input type="text" value="12334" disabled>
+</body>
+```
+> have to enter required info if elements have any required attr.
+```ruby
+<style>
+    :required{
+            width: 100px;
+            border: 10px solid rosybrown;
+        } 
+    </style>
+</head>
+<body>  
+        <form action="https://www.google.com.tr/search" method="get">
+            Phone-num: <input name='q' type="text" required><br>
+            <input type="submit" value="gonder">
+        </form>
+</body>
+```
  
  
