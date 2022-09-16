@@ -102,3 +102,81 @@ This is a quick refresher of CSS concepts.
 | :disabled | input:disabled| An element is disabled if it cant be activated |
 | :required| input:required | represents any input,select element that has the required attr set on it |
 
+> :focus ->Makes the necessary style definitions when the specified html element is focused.Generally used in input elements.If u want to use with div elements you have to use with tabindex attr. (click tab and watch it)
+```ruby
+    <style>
+        div:focus{
+            background-color: red;
+        }
+    </style>
+    
+<body> 
+    <div tabindex="1">HTML</div><br>
+    <div tabindex="3">CSS</div><br>
+    <div tabindex="2">JS</div><br>
+    <div tabindex="4">PYTHON</div>
+</body>
+```
+> :target CSS pseudo-class represents a unique element with an id matching the URL's fragment.
+```ruby
+ <style>
+       :target{
+        color: cadetblue;
+        background-color: yellow;
+       }
+ </style> 
+    
+<body> 
+    <div><a href='#ProgrammingLang'>Programming Languages</a></div>
+    <div><a href='#MarkupLanguage'>Markup Languages</a></div>
+    
+    <ul id="ProgrammingLang">
+        <li>HTML</li>
+        <li>PYTHON</li>
+        <li>C#</li>
+        <li>C</li>
+    </ul>
+
+    <ul id="MarkupLanguage">
+        <li>CSS</li>
+        <li>HTML</li>
+    </ul>
+ </body>   
+ ```
+ > :not() Defines the style for all html elements except the specified html element.Firstly you have to create specific style for these elements.
+ 
+ ```ruby
+     <style>
+        h3{
+            background-color: red;
+        }
+       :not(h3){
+        background-color: aquamarine;
+       }
+    </style>
+</head>
+<body> 
+    <h2>This is Title</h2>
+    <h3>This is content</h3>
+    <h4>This is resources</h4>
+</body>
+```
+> :checked : defines the style when the specified html element is selected. returns to normal when deselected. If you use checked attr it means checkbox is selected
+```ruby
+   <style>
+        input:checked{
+        width: 20px;
+        height: 20px;
+      }   
+    </style>
+</head>
+<body>  
+    <input type='checkbox'>Hobbies</input><br>
+    <input type='checkbox'>Books</input><br>
+    <input type='checkbox' checked="checked">Foods</input>
+</body>
+```
+
+
+ 
+ 
