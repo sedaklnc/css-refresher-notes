@@ -205,5 +205,16 @@ This is a quick refresher of CSS concepts.
         </form>
 </body>
 ```
- 
+> When you write number between 10 and 20 the number color will be red the others will be default color
+ ```ruby
+     <style> 
+        input:in-range{
+            color: red;
+        }
+    </style>
+</head>
+<body>         
+            <input type="number" min="10" max="20">
+</body>
+```
  
