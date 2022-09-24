@@ -217,4 +217,75 @@ This is a quick refresher of CSS concepts.
             <input type="number" min="10" max="20">
 </body>
 ```
- 
+## CSS PSUEDO ELEMENTS 
+A CSS pseudo-element is a keyword added to a selector that lets you style a specific part of the selected elements.
+
+| Name | Description | 
+| :---         |     :---:      |
+| first-letter |  Defines a style to the first character of the specified html element |
+| first-line |  Defines a style to the first line of the specified html element  |
+| before |   Defines style by assigning content before the specified html element|
+| after|  Can be used to insert some content after the content of an element.|
+| selection|Matches the portion of an element that is selected by a user.|
+
+> How to use ::first-letter -> First letters colors will change which are H and C 
+```ruby
+<style>
+
+  p::first-letter{
+    color: red;
+  }
+  div::first-letter{
+    color: rgb(19, 195, 31);
+  }
+</style>
+
+<body>        
+    
+    <p>CSS</p>
+    <div>HTML</div>
+
+</body>
+
+```
+> How to use ::first-line ? First-line is  responsive pseudo element when you make smaller the website first-line applied to the  first line again
+```ruby
+<style>
+  
+  ::first-line{
+    color: cornflowerblue;
+  }
+
+</style>
+<body>        
+    
+   <div> HTML is markup language.<br>HTML is skeleton of the web </div>
+</body>
+```
+> ::before psuode element usage as you see below before the weather cond we will see -sun- charachter 
+``` ruby
+
+<style>  
+    button::before{
+    content: '\2600';
+    color: red;
+  }
+</style>
+
+<body>              
+   <button> Weather condition</button>
+</body>
+```
+>:: selection usage : when you select the div element's content color will be red
+
+``` ruby
+<style>
+    ::selection{
+    color: red;
+  }
+</style>
+
+<body>         
+   <div>Daisy is my favorite flower</div>
+</body>
+```
