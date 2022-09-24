@@ -289,3 +289,49 @@ A CSS pseudo-element is a keyword added to a selector that lets you style a spec
    <div>Daisy is my favorite flower</div>
 </body>
 ```
+## WIDTH 
+> The width CSS property sets an element's width
+
+| Name | Description | 
+| :---         |     :---:      |
+| auto |  The browser will calculate and select a width for the specified element. |
+| % | Defines the width as a percentage of the containing block's width.  |
+| inherit|  Inherits this property from its parent element|
+| initial| 	Sets this property to its default value.|
+
+```ruby
+<style>
+  
+    div#bir{
+        background-color: black;
+        width: 80%;
+    }
+    div#iki{
+        background-color: red;
+        width: inherit;
+    }
+    div#uc{
+        background-color: blue;
+        width: inherit;
+    }
+    div#dort{
+        background-color: yellow;
+        width: inherit;
+    }
+  
+</style>
+
+<body>         
+    <div id="bir">
+        <div id="iki">
+            <div id="uc">
+                <div id="dort">zz</div>
+            </div>
+        </div>
+    </div>
+</body>
+```
+> The output of the above code is the picture below.
+![image](https://user-images.githubusercontent.com/63013903/192121291-b7d101e3-a819-46fc-ae94-3ad89b5f8a2a.png)
+
+
