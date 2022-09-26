@@ -334,4 +334,44 @@ A CSS pseudo-element is a keyword added to a selector that lets you style a spec
 > The output of the above code is the picture below.
 ![image](https://user-images.githubusercontent.com/63013903/192121291-b7d101e3-a819-46fc-ae94-3ad89b5f8a2a.png)
 
+## HEIGHT 
+> Sets the height of html elements.Content is important
+
+| Name | Description | 
+| :---         |     :---:      |
+| auto |  The browser will calculate and select a width for the specified element. |
+| % | Defines the width as a percentage of the containing block's height.  |
+| inherit|  Inherits this property from its parent element|
+| initial| 	Sets this property to its default value.|
+
+```ruby
+<style> 
+  div#main-value{
+    background-color: aqua;
+    height: 100px;
+  }
+
+  div#temp-value{
+    height: 25px;
+  }
+  div#one{
+    background-color: brown;
+    height: inherit;
+  }
+  div#two{
+    background-color: yellow;
+    height: inherit;
+  }
+</style>
+
+<body>         
+      <div id="main-value">
+        <div id="temp-value">
+            <div id="one">CSS</div>
+            <div id="two">LECTURES</div>
+        </div>
+      </div>
+```
+output is : an intermediate element is used to avoid the height of the inherited height main element.
+![image](https://user-images.githubusercontent.com/63013903/192312546-4a090748-2c1f-44f6-850b-74c8814bcad7.png)
 
