@@ -12,7 +12,7 @@ This is a quick refresher of CSS concepts.
 |3| [Css-Pseudo-Elements](https://github.com/sedaklnc/css-refresher-notes#css-psuedo-elements)|
 |4   | [Width](https://github.com/sedaklnc/css-refresher-notes#width)|
 |5   | [Height](https://github.com/sedaklnc/css-refresher-notes#height)|
-|6  | [Border](https://github.com/sedaklnc/css-refresher-notes/edit/main/README.md#border)|
+|6  | [Border](https://github.com/sedaklnc/css-refresher-notes#border)|
 
 
 
