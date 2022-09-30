@@ -12,6 +12,7 @@ This is a quick refresher of CSS concepts.
 |3| [Css-Pseudo-Elements](https://github.com/sedaklnc/css-refresher-notes#css-psuedo-elements)|
 |4   | [Width](https://github.com/sedaklnc/css-refresher-notes#width)|
 |5   | [Height](https://github.com/sedaklnc/css-refresher-notes#height)|
+|6  | [Border](https://github.com/sedaklnc/css-refresher-notes/edit/main/README.md#border)|
 
 
 
@@ -390,3 +391,70 @@ A CSS pseudo-element is a keyword added to a selector that lets you style a spec
 output is : an intermediate element is used to avoid the height of the inherited height main element.
 ![image](https://user-images.githubusercontent.com/63013903/192312546-4a090748-2c1f-44f6-850b-74c8814bcad7.png)
 
+## BORDER 
+> The border shorthand CSS property sets an element's border. Syntax= line-width || line-style|| color. we have to indicate style parameters. but the other parameters if we dont indicate it will set the default value.
+
+| ParamterOne| ParameterTwo| ParameterThree | 
+| :---         |     :---:      | :---:  |
+| :boom: Length| :boom: Style| :boom:  Color | 
+|  Length|  none |color |
+| Initial| hidden | |
+| Inherit| solid| |
+| Thin|  double| |
+| |  dashed| |
+| |  dotted| |
+| |  groove| |
+| |  ridge| |
+| |  inset| |
+| |  outset| |
+
+```ruby
+<style> 
+  #one{
+    border: 2px none red;
+  }
+  #two{
+    border: 2px hidden red;
+  }
+  #three{
+    border: 2px solid red;
+  }
+  #four{
+    border: 2px double red;
+  }
+  #five{
+    border: 2px dashed red;
+  }
+  #six{
+    border: 2px dotted red
+  }
+  #seven{
+    border: 2px groove red;
+  }
+  #eight{
+    border: ridge red;
+
+  }
+  #nine{
+    border: 2px inset red;
+  }
+  #ten {
+    border: 2px outset red
+  }
+</style>
+
+<body>         
+      <p id="one">This is NONE!</p>
+      <p id="two">This is HIDDEN!</p>
+      <p id="three">This is SOLID!</p>
+      <p id="four">This is DOUBLE!</p>
+      <p id="five">This is DASHED!</p>
+      <p id="six">This is DOTTED!</p>
+      <p id="seven">This is GROOVE!</p>
+      <p id="eight">This is RIDGE!</p>
+      <p id="nine">This is Inset!!</p>
+      <p id="ten">This is OUTSET!!</p>
+</body>
+``` 
+Let's get to know the style parameters
+![image](https://user-images.githubusercontent.com/63013903/193265805-528b91c6-1bd8-41cc-a634-d36456b8632b.png)
