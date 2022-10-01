@@ -13,6 +13,7 @@ This is a quick refresher of CSS concepts.
 |4   | [Width](https://github.com/sedaklnc/css-refresher-notes#width)|
 |5   | [Height](https://github.com/sedaklnc/css-refresher-notes#height)|
 |6  | [Border](https://github.com/sedaklnc/css-refresher-notes#border)|
+|7  | [Padding](https://github.com/sedaklnc/css-refresher-notes#padding)|
 
 
 
@@ -458,3 +459,61 @@ output is : an intermediate element is used to avoid the height of the inherited
 ``` 
 Let's get to know the style parameters
 ![image](https://user-images.githubusercontent.com/63013903/193265805-528b91c6-1bd8-41cc-a634-d36456b8632b.png)
+
+## PADDING
+
+Padding is used to create space around an element's content, inside of any defined borders
+
+| Paramter| Description|
+| :---         |     :---:      | 
+|  Length|  The size of the padding as a fixed value. |
+| %|  The size of the padding as a percentage| 
+| Initial| Returns the inital value | 
+| Inherit| set to the computed value of the parent element| 
+
+lets give an example
+![image](https://user-images.githubusercontent.com/63013903/193410821-5726d782-e038-4dfc-8266-b95f419da8a1.png)
+
+if you want to see If you want to see an image like above we need to do some calculations. Lets start with html code
+```ruby
+<body>             
+  <div id="one">
+    <div id="two">
+      Topic is Padding
+    </div>
+  </div>
+</body>
+``` 
+lets continue with child's style 
+```ruby
+ div#two{
+    width: 108px;
+    height: 18px;
+    border: 1px solid red;
+    padding: 10px;
+  }
+  ```
+ > Output is 
+ 
+![image](https://user-images.githubusercontent.com/63013903/193411086-7397f66e-85d6-45eb-8f4d-f8632ccf9be4.png)
+
+okey lets cont with calculation. What will be the parent value which id is one.
+
+WIDTH = child width + shild border-left + child border-right + padding = 108 + 10 + 1+1 = 130
+
+HEIGHT = child height + child border-top + child border-bottom + child padding + 18 + 1+1 +10 + 30
+
+RESULT WILL BE 
+
+```ruby 
+ div#one{
+    width: 130px;
+    height: 40px;
+    border: 1px solid blue;
+    padding:30px; 
+  }
+  ```
+  ![image](https://user-images.githubusercontent.com/63013903/193411345-2e44280c-7d46-4880-ae27-983bb5f0dbe4.png)
+  
+
+
