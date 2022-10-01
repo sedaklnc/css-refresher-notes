@@ -13,6 +13,7 @@ This is a quick refresher of CSS concepts.
 |6  | [Border](https://github.com/sedaklnc/css-refresher-notes#border)|
 |7  | [Padding](https://github.com/sedaklnc/css-refresher-notes#padding)|
 |8 | [Padding-Individual-Sides](https://github.com/sedaklnc/css-refresher-notes#padding---individual-sides)|
+|9 | [Margin](https://github.com/sedaklnc/css-refresher-notes#margin-baby_chick)|
 
 
 
@@ -566,6 +567,57 @@ p#top{
   what will be the output :eyes:
   
   ![image](https://user-images.githubusercontent.com/63013903/193413261-06165911-ede7-4760-a801-855d66fd41ae.png)
+
+## MARGIN :baby_chick:
+
+The margin CSS shorthand property sets the margin area on all four sides of an element
+
+| Paramter| Description|
+| :---         |     :---:      | 
+|  Length|  The size of the margin as a fixed value. |
+| %|  The size of the margin as a percentage| 
+| Initial| Returns the inital value | 
+| Inherit| set to the computed value of the parent element|
+| Auto| set to the computed value of the parent element|
+
+> lets understand better :whale2:
+
+```ruby
+<style>
+  div{  
+    border:5px solid red;
+    background-color: red;  
+  }  
+</style>
+
+<body>             
+  <div></div> 
+</body>
+```
+
+When we write like this code the output will be 
+![image](https://user-images.githubusercontent.com/63013903/193416110-9621860c-5d16-4cf2-ae15-60091fe534e8.png)
+
+okey as you can see line has space with right to left and top size because of body's margin.If we rewrite code like this
+
+```ruby
+<style>
+  body{
+    margin: 0px;
+  }
+  div{  
+    border:5px solid red;
+    background-color: red;  
+  }  
+</style>
+
+<body>             
+  <div></div> 
+</body>
+```
+
+> yup its okey right now. So when we write menubar or footer firstly reset the margin
+![image](https://user-images.githubusercontent.com/63013903/193416237-2b4dc924-8963-45ee-91e0-a588c85852aa.png)
 
 
 
