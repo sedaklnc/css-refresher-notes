@@ -3,8 +3,6 @@ This is a quick refresher of CSS concepts.
 
 
 
-
-
 |Content No | Content|
 |----|-------------|
 |1  | [Selectors](https://github.com/sedaklnc/css-refresher-notes#selectors)|
@@ -14,6 +12,7 @@ This is a quick refresher of CSS concepts.
 |5   | [Height](https://github.com/sedaklnc/css-refresher-notes#height)|
 |6  | [Border](https://github.com/sedaklnc/css-refresher-notes#border)|
 |7  | [Padding](https://github.com/sedaklnc/css-refresher-notes#padding)|
+|8 | [Padding-Individual-Sides](https://github.com/sedaklnc/css-refresher-notes#padding---individual-sides)|
 
 
 
@@ -474,7 +473,7 @@ Padding is used to create space around an element's content, inside of any defin
 lets give an example
 ![image](https://user-images.githubusercontent.com/63013903/193410821-5726d782-e038-4dfc-8266-b95f419da8a1.png)
 
-if you want to see If you want to see an image like above we need to do some calculations. Lets start with html code
+If you want to see an image like above we need to do some calculations. Lets start with html code
 ```ruby
 <body>             
   <div id="one">
@@ -515,5 +514,58 @@ RESULT WILL BE
   ```
   ![image](https://user-images.githubusercontent.com/63013903/193411345-2e44280c-7d46-4880-ae27-983bb5f0dbe4.png)
   
+  
+  ## Padding - Individual Sides
+    The padding-top: CSS property sets the height of the padding area on the top of an element.
+  
+    The padding-bottom: CSS property sets the height of the padding area on the bottom of an element.
+  
+    The padding-right: CSS property sets the width of the padding area on the right of an element.
+
+    The padding-left: CSS property sets the width of the padding area to the left of an element.
+    
+  LETS DO IT  :bird:
+
+```ruby
+<body>             
+  <p id="top">Padding-top</div>
+  <p id="left">Padding-left</div>
+  <p id="bottom">Padding-bottom</div>
+  <p id="right">Padding-right</div>
+</body>
+```
+
+HTML part is done and lets see CSS part
+
+```ruby
+p#top{
+    width: 79px;
+    height: 18px;
+    border:1px solid red;
+    padding-top: 25px;
+  }
+  p#right{
+    width: 88px;
+    height: 18px;
+    border:1px solid red;
+    padding-right: 25px;
+  }
+  p#bottom{
+    width: 104px;
+    height: 18px;
+    border:1px solid red;
+    padding-bottom: 25px;
+  }
+  p#left{
+    width: 80px;
+    height: 18px;
+    border:1px solid red;
+    padding-left: 25px;
+  }
+  ```
+  what will be the output :eyes:
+  
+  ![image](https://user-images.githubusercontent.com/63013903/193413261-06165911-ede7-4760-a801-855d66fd41ae.png)
+
 
 
