@@ -14,6 +14,7 @@ This is a quick refresher of CSS concepts.
 |7  | [Padding](https://github.com/sedaklnc/css-refresher-notes#padding)|
 |8 | [Padding-Individual-Sides](https://github.com/sedaklnc/css-refresher-notes#padding---individual-sides)|
 |9 | [Margin](https://github.com/sedaklnc/css-refresher-notes#margin-baby_chick)|
+|10 | [Background-Repeat](https://github.com/sedaklnc/css-refresher-notes#background-repeat--shell)|
 
 
 
@@ -619,5 +620,90 @@ okey as you can see line has space with right to left and top size because of bo
 > yup its okey right now. So when we write menubar or footer firstly reset the margin
 ![image](https://user-images.githubusercontent.com/63013903/193416237-2b4dc924-8963-45ee-91e0-a588c85852aa.png)
 
+## Background-repeat  :shell:
 
+| Paramter| Description|
+| :---         |     :---:      | 
+|  repeat|   tile the image in both directions. This is the default value|
+| Space|   tile the image in both directions. Never crop the image unless a single image is too large to fit. If multiple images can fit, space them out evently images always touching the edges| 
+| Round|tile the image in both directions. Never crop the image unless a single image is too large to fit. | 
+| no-repeat|don’t tile, just show the image once|
+| repeat-x|tile the image horizontally|
+| repeat-y| tile the image vertically| 
+| initial| returns initial value|
+| inherit| set to the computed value of the parent element|
+
+> Lets understand with an example. 
+
+```ruby
+<body>
+    <h2>THIS IS REPEAT</h2><p id="one"></p>
+    <h2>THIS IS Space</h2><p id="two"></p>
+    <h2>THIS IS Round</h2><p id="three"></p>
+    <h2>THIS IS no-REPEAT</h2><p id="four"></p>
+    <h2>THIS IS REPEAT-x</h2><p id="five"></p>
+    <h2>THIS IS REPEAT-y</h2><p id="six"></p>
+</body> 
+```
+
+HTML PART IS DONE 
+
+CSS PART IS STARTED
+
+```ruby
+    p#one{
+        width:800px;
+        height:300px;
+        border: 5px solid orangered;
+        background-image: url('photo.jpg');
+        background-repeat: repeat;
+        color: brown;
+        font-size: 60px;
+        font-weight: bolder;
+    }
+    p#two{
+        width:800px
+        ;
+        height:300px;
+        border: 5px solid orangered;
+        background-image: url('photo.jpg');
+        background-repeat: space;
+    }
+    p#three{
+        width:800px
+        ;
+        height:300px;
+        border: 5px solid orangered;
+        background-image: url('photo.jpg');
+        background-repeat: round;
+    }
+    p#four{
+        width:800px
+        ;
+        height:300px;
+        border: 5px solid orangered;
+        background-image: url('photo.jpg');
+        background-repeat: no-repeat;
+    }
+    p#five{
+        width:800px;
+        height:300px;
+        border: 5px solid orangered;
+        background-image: url('photo.jpg');
+        background-repeat: repeat-x;
+    }
+    p#six{
+        width:800px;
+        height:300px;
+        border: 5px solid orangered;
+        background-image: url('photo.jpg');
+        background-repeat: repeat-y;
+    }
+```
+CSS PART IS DONE..
+
+output will be like below  :jack_o_lantern:
+
+![image](https://user-images.githubusercontent.com/63013903/193453516-7a13ad47-11a9-4d7e-9ec3-ab82399d6339.png)
+![image](https://user-images.githubusercontent.com/63013903/193453544-d7c3e02e-5f79-418d-a0e8-684881d9d4f0.png)
 
