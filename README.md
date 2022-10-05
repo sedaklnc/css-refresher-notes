@@ -15,6 +15,7 @@ This is a quick refresher of CSS concepts.
 |8 | [Padding-Individual-Sides](https://github.com/sedaklnc/css-refresher-notes#padding---individual-sides)|
 |9 | [Margin](https://github.com/sedaklnc/css-refresher-notes#margin-baby_chick)|
 |10 | [Background-Repeat](https://github.com/sedaklnc/css-refresher-notes#background-repeat--shell)|
+|11| [Text-Align](https://github.com/sedaklnc/css-refresher-notes#text-align-alien)|
 
 
 
@@ -706,4 +707,64 @@ output will be like below  :jack_o_lantern:
 
 ![image](https://user-images.githubusercontent.com/63013903/193453516-7a13ad47-11a9-4d7e-9ec3-ab82399d6339.png)
 ![image](https://user-images.githubusercontent.com/63013903/193453544-d7c3e02e-5f79-418d-a0e8-684881d9d4f0.png)
+
+## Text-align :alien:
+
+The text-align property is specified in one of the following ways
+
+| Paramter| Description|
+| :---         |     :---:      | 
+|  left| The inline contents are aligned to the left edge of the line box|
+| right| The inline contents are aligned to the right edge of the line box| 
+| justify|The inline contents are justified|
+| center| The inline contents are centered within the line box|
+
+Lets give an example 
+
+![image](https://user-images.githubusercontent.com/63013903/194069750-146579df-f48b-478f-8762-420190562a54.png)
+
+Okey as you can see above the last one and the fourth one both of them are justify. But justify But justify is not clear for small text.Lets code it 
+
+```ruby
+<style>
+    div#center{
+        width: 750px;
+        height: auto;
+        border: 2px solid red;
+        text-align:center;
+    }
+    div#right{
+        width: 750px;
+        height: auto;
+        border: 2px solid red;
+        text-align:right;
+    }
+    div#left{
+        width: 750px;
+        height: auto;
+        border: 2px solid red;
+        text-align:left;
+    }
+    div#justify{
+        width: 750px;
+        height: auto;
+        border: 2px solid red;
+        text-align:justify;
+    }
+    div#justifyBetter{
+        width: 750px;
+        height: auto;
+        border: 2px solid red;
+        text-align:center;
+    }
+</style>
+<body>
+    <div id="center">TEXT ALIGN CENTER</div><br>
+    <div id="right">TEXT ALIGN RIGHT</div><br>
+    <div id="left">TEXT ALIGN LEFT</div><br>
+    <div id="justify">TEXT ALIGN JUSTIFY</div><br>
+    <div id="justifyBetter">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate hic dolorum doloremque nostrum maiores quaerat iste optio odit voluptates nesciunt expedita sint debitis ex eveniet repellendus quod, asperiores, totam magnam?
+    </div>
+</body>
+```
 
